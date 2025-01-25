@@ -77,11 +77,11 @@ export const Todos = () => {
       ))}
 
       {!hasTodos && (
-        <p className='mb-5 text-xl text-red-500'>Please add a todo!</p>
+        <p className='mb-5 text-xl text-purple-900'>Please add a todo!</p>
       )}
 
       {hasTodos && (
-        <p>{`[${remainingTodos} of ${todoLength}] todos remaining`}</p>
+        <p className='text-white'>{`[${remainingTodos} of ${todoLength}] todos remaining`}</p>
       )}
     </section>
   );
